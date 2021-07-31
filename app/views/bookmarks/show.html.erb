@@ -12,7 +12,7 @@
 
 <p>
   <strong>Category:</strong>
-  <%= @bookmark.category_id %>
+  <%= Category.find( @bookmark.category_id).name %>
 </p>
 
 <%= link_to 'Edit', edit_bookmark_path(@bookmark) %> |
